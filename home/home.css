@@ -1,0 +1,17 @@
+body{
+    background-color: darkorange;
+}
+h1{
+    font-family:inherit;
+    color:crimson;
+    text-align: center;
+    text-decoration:underline;
+}
+img{
+    height:950px;
+    width: 700px;
+    border: 15px solid burlywood;
+    border-radius: 15px 15px 15px 15px;
+    display: block;
+    margin: 0 auto;
+}

@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap");
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+    background-color:chocolate;
+    color:crimson;
+}
+
+
+nav {
+    background-color:black; 
+    padding: 20px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0 4px 6px black; 
+    border-radius: 10px; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Optional - Navigation Items within the nav */
+nav a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: 700; 
+    padding: 10px 5px; 
+    transition: color 0.4s ease; 
+}
+
+nav a:hover {
+    color:chartreuse; 
+    text-decoration: underline; 
+}
+
+
+nav .brand {
+    font-size: 1.5em; 
+    font-weight: 700;
+}
+
+
+nav:hover {
+    background-color:crimson; 
+}
+ 
+
+.recipe-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+.recipe {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align:left;
+    background-color: white;
+    transition: box-shadow 0.3s;
+}
+
+.recipe:hover {
+    box-shadow: 0 10px 20px black;
+}
+
+.recipe img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.recipe-title {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.recipe-description {
+    color:black;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.recipe-price {
+    color:crimson;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.order-recipe {
+    background-color:chocolate;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.order-recipe:hover {
+    background-color:crimson;
+}
+
+
+@media (max-width: 768px) {
+    .recipe-grid {
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-grid {
+        grid-template-columns:1fr ;
+    }
+
+    nav {
+        flex-direction: colomn;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+        footer {
+            background:rgb(74, 57, 57);
+            color: #fff;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .footer-section {
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+
+        .helpful-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .helpful-links ul li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .helpful-links a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.2s;
+        }
+
+        .helpful-links a:hover {
+            color:brown; 
+        }
+
+       
+        .social-media {
+            text-align: center;
+            text-shadow: black;
+        }
+
+        .social-media a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: transform 0.3s, color 0.3s; 
+        }
+
+        .social-media a:hover {
+            transform: scale(2.2); 
+            color:brown;
+
+        }
+        .footer-bottom {
+            border-top: 2px dashed ;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+.title{
+    color:brown;
+    font-family: serif;
+    text-align: center;
+}
+.title:hover{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.description{
+    color:black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
